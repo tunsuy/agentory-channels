@@ -1,0 +1,21 @@
+{
+  "name": "agentory-channels",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Open-source IM channel adapters for Agentory — ChannelAdapter contract + official reference implementations + mock + contract test suite",
+  "license": "Apache-2.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "npm run build -w @agentoryhq/im-channel-contract && npm run build -w @agentoryhq/im-channel-mock",
+    "test": "npm run build && node --test packages/mock/dist/index.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.1",
+    "typescript": "^5.9.2"
+  }
+}

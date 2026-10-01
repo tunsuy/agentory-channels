@@ -1,0 +1,32 @@
+{
+  "name": "@agentoryhq/im-channel-mock",
+  "version": "0.1.0",
+  "description": "Deterministic mock IM channel adapter for Agentory — smoke/dev carrier, zero real IM accounts, env-gated (production never registers it)",
+  "license": "Apache-2.0",
+  "type": "module",
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/index.test.js"
+  },
+  "dependencies": {
+    "@agentoryhq/im-channel-contract": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tunsuy/agentory-channels.git",
+    "directory": "packages/mock"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

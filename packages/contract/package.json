@@ -1,0 +1,32 @@
+{
+  "name": "@agentoryhq/im-channel-contract",
+  "version": "0.1.0",
+  "description": "Agentory ChannelAdapter contract for IM channels — inbound normalization / outbound reply / credential probing / contract test suite",
+  "license": "Apache-2.0",
+  "type": "module",
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./suite": {
+      "types": "./dist/suite.d.ts",
+      "default": "./dist/suite.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tunsuy/agentory-channels.git",
+    "directory": "packages/contract"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
