@@ -1,0 +1,33 @@
+{
+  "name": "@agentoryhq/im-channel-feishu",
+  "version": "0.1.0",
+  "description": "Feishu/Lark channel adapter for Agentory — official @larksuiteoapi/node-sdk WSClient long connection, no public webhook endpoint",
+  "license": "Apache-2.0",
+  "type": "module",
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/index.test.js"
+  },
+  "dependencies": {
+    "@agentoryhq/im-channel-contract": "*",
+    "@larksuiteoapi/node-sdk": "1.74.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tunsuy/agentory-channels.git",
+    "directory": "packages/feishu"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

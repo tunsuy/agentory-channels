@@ -11,8 +11,8 @@
     "node": ">=20"
   },
   "scripts": {
-    "build": "npm run build -w @agentoryhq/im-channel-contract && npm run build -w @agentoryhq/im-channel-mock",
-    "test": "npm run build && node --test packages/mock/dist/index.test.js"
+    "build": "npm run build -w @agentoryhq/im-channel-contract && npm run build -w @agentoryhq/im-channel-mock && npm run build -w @agentoryhq/im-channel-feishu",
+    "test": "npm run build && node --test packages/mock/dist/index.test.js packages/feishu/dist/index.test.js"
   },
   "devDependencies": {
     "@types/node": "^22.18.1",
