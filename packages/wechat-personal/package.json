@@ -1,0 +1,32 @@
+{
+  "name": "@agentoryhq/im-channel-wechat-personal",
+  "version": "0.1.0",
+  "description": "Personal WeChat (iLink bot) channel adapter for Agentory — outbound long-poll against ilinkai.weixin.qq.com, no public webhook endpoint, single chats only",
+  "license": "Apache-2.0",
+  "type": "module",
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/index.test.js"
+  },
+  "dependencies": {
+    "@agentoryhq/im-channel-contract": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tunsuy/agentory-channels.git",
+    "directory": "packages/wechat-personal"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

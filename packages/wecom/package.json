@@ -1,0 +1,33 @@
+{
+  "name": "@agentoryhq/im-channel-wecom",
+  "version": "0.1.0",
+  "description": "WeCom (企业微信) smart-robot channel adapter for Agentory — official @wecom/aibot-node-sdk WebSocket long connection, no public webhook endpoint",
+  "license": "Apache-2.0",
+  "type": "module",
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/index.test.js"
+  },
+  "dependencies": {
+    "@agentoryhq/im-channel-contract": "*",
+    "@wecom/aibot-node-sdk": "1.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tunsuy/agentory-channels.git",
+    "directory": "packages/wecom"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
