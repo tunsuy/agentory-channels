@@ -26,12 +26,12 @@ Adapters run **inside the control-plane process**. Every transport is an outboun
 
 | Package | npm | Status |
 |---|---|---|
-| `packages/contract` — `ChannelAdapter` port + contract test suite | `@agentoryhq/im-channel-contract` | implemented · npm publish pending |
-| `packages/mock` — deterministic mock channel (env-gated; production never registers it) | `@agentoryhq/im-channel-mock` | implemented · npm publish pending |
-| `packages/feishu` — Feishu/Lark (`@larksuiteoapi/node-sdk`, WSClient long connection) | `@agentoryhq/im-channel-feishu` | implemented · npm publish pending |
-| `packages/dingtalk` — DingTalk (`dingtalk-stream`, Stream mode WSClient; replies via per-conversation sessionWebhook) | `@agentoryhq/im-channel-dingtalk` | implemented · npm publish pending |
-| `packages/wecom` — WeCom (`@wecom/aibot-node-sdk`, WebSocket; active-send is markdown-only per protocol) | `@agentoryhq/im-channel-wecom` | implemented · npm publish pending |
-| `packages/wechat-personal` — personal WeChat (iLink bot CGI protocol, outbound long-poll; clean-room reimplementation — the official plugin is OpenClaw-host-coupled. **1:1 private chat only**) | `@agentoryhq/im-channel-wechat-personal` | implemented · npm publish pending |
+| `packages/contract` — `ChannelAdapter` port + contract test suite | `@agentoryhq/im-channel-contract` | published · npm `0.1.0` |
+| `packages/mock` — deterministic mock channel (env-gated; production never registers it) | `@agentoryhq/im-channel-mock` | published · npm `0.1.0` |
+| `packages/feishu` — Feishu/Lark (`@larksuiteoapi/node-sdk`, WSClient long connection) | `@agentoryhq/im-channel-feishu` | published · npm `0.1.0` |
+| `packages/dingtalk` — DingTalk (`dingtalk-stream`, Stream mode WSClient; replies via per-conversation sessionWebhook) | `@agentoryhq/im-channel-dingtalk` | published · npm `0.1.0` |
+| `packages/wecom` — WeCom (`@wecom/aibot-node-sdk`, WebSocket; active-send is markdown-only per protocol) | `@agentoryhq/im-channel-wecom` | published · npm `0.1.0` |
+| `packages/wechat-personal` — personal WeChat (iLink bot CGI protocol, outbound long-poll; clean-room reimplementation — the official plugin is OpenClaw-host-coupled. **1:1 private chat only**) | `@agentoryhq/im-channel-wechat-personal` | published · npm `0.1.0` |
 
 ## Develop
 
